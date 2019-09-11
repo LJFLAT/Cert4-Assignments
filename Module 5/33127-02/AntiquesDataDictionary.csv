@@ -1,0 +1,35 @@
+﻿Categories,CategoryID,int,Yes,No,Primary Key of the Categories table
+Categories,Category,varchar(20),No,No,Customer category - e.g. 20-29, 30-39, 40-49
+Customers,CustomerID,int,Yes,No,Primary Key for the Customer table
+Customers,CategoryID,int,No,Yes,Foreign Key for the Categories table
+Customers,FirstName,varchar(50),No,No,Customer's first name
+Customers,LastName,varchar(50),No,No,Customer's last name
+Customers,Address,varchar(100),No,No,Customer address
+Customers,Suburb,varchar(50),No,No,Customer suburb
+Customers,State,varchar(3),No,No,Customer state
+Customers,Postcode,int,No,No,Customer postcode
+Customers,SendNewsletter,bit,No,No,Determines if a newsletter has been requested (True/1) or (False/0)
+Groups,GroupID,int,Yes,No,Primary Key for the Groups table
+Groups,GroupName,varchar(20),No,No,Name of the group the item belongs to - e.g. jewellery, watch
+Items,ItemID,int,Yes,No,Primary Key for the Items table
+Items,MaterialID,int,No,Yes,Foreign Key for the Materials table
+Items,StyleID,int,No,Yes,Foreign Key for the Styles table
+Items,GroupID,int,No,Yes,Foreign Key for the Groups table
+Items,Year,int,No,No,Year the item was crafted
+Items,Price,money,No,No,Price of the item in $
+Items,Gender,varchar(1),No,No,Gender target market - (M)ales, (W)omens - Allow for the possibility for a (U)nisex option
+Items,InStock,bit,No,No,Determines if the item is in stock (True/1) or sold (False/0)
+Materials,MaterialID,int,Yes,No,Primary Key for the Materials table
+Materials,MaterialName,varchar(30),No,No,Majority type of material the product is made from - e.g. gold, silver, pearl, diamond
+SaleItems,SaleID,int,No,Yes,Foreign Key to link into Sales table
+SaleItems,ItemID,int,No,Yes,Foreign Key to link into the Items table
+Sales,SaleID,int,Yes,No,Primary Key for the Sales table
+Sales,CustomerID,int,No,Yes,Foreign Key used to link into the Customers table
+Sales,SaleDate,datetime,No,No,Date of sale
+Styles,StyleID,int,Yes,No,Primary Key for the Styles table
+Styles,StyleName,varchar(30),No,No,The Style of the item - e.g. earring, ring, watch, bracelet
+sysdiagrams,name,sysname,No,No,NULL
+sysdiagrams,principal_id,int,No,No,NULL
+sysdiagrams,diagram_id,int,Yes,No,NULL
+sysdiagrams,version,int,No,No,NULL
+sysdiagrams,definition,varbinary(-1),No,No,NULL
