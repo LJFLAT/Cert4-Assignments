@@ -1,0 +1,51 @@
+1. Import java utilities to use swinng JOptionPane;
+
+2. Add Javadoc comment for the class
+
+3. For the main method (add Javadoc comments for the main method):
+	
+    a. create a character String named response;
+		
+    b. code a new ArrayList
+		
+    c. add 5 birds to the array
+		
+    d. add a do/while loop with an exit on 'Q' being entered
+		
+    e. Create a string named answer which holds an input dialog the parameters for the selection 
+       should be displayed with the letter to press to select a menu item e.g. "Enter A to add a bird \n" + 
+            
+    f. Create a variable to hold the response from answer. Check the answer at charAt(0);
+			
+    g. Create a series of if/else statements to test if the response was equal to A,R,D,S.
+	
+4.	Create a method named addToArray (add Javadoc comments for the addToArray method).
+	    
+	a. Create an input dialog which asks the user for a bird name to add. Hold the response in a string variable named answer.
+        
+    b. Add the response held in the variable answer to the array
+		
+    c. Display the array
+		
+5. Create a method named deleteEntry (add Javadoc comments for the deleteEntry method).
+	
+    a. Create an input dialog which asks the user for a bird name to be deleted. Hold the response in a string variable named answer.
+
+    b. Use a for loop to determine if the bird to be searched is in the array. 
+
+    c. If found, confirm to delete. If user says yes to delete, remove the bird from the array.
+
+    d. If not found, display an error message.
+
+    e. Display the array
+ 	
+5. Create a method named searchArray (add Javadoc comments for the searchArray method).
+	
+    a. Create an input dialog which asks the user for a bird name to search for. Hold the response in a string variable named searchValue.
+
+    b. Use a binary search algorithm to find the bird.
+	
+	c. If found, display the bird and the array index, otherwise notify the bird was not found.
+	
+6. Create a method named displayArray to list the contents of the array in the console. Add Javadoc comments for the displayArray method. 
+
